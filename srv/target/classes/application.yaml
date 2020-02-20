@@ -6,5 +6,5 @@ spring:
     driver-class-name: org.sqlite.JDBC
     initialization-mode: never
 server:
-  port: 8082
+  port: 8081
 

@@ -1,6 +1,7 @@
 cds/gen/configservice/ObjConfigkeyValue_.class
 cds/gen/sap/structsync/objconfiguration/ObjectConfiguration.class
 cds/gen/sap/structsync/objattmapping/ObjAttMapping_.class
+com/sap/structsync/service/Application.class
 cds/gen/sap/structsync/objconfiguration1/ObjectConfiguration.class
 cds/gen/sap/structsync/objconfiguration1/ObjectConfiguration_.class
 cds/gen/sap/structsync/objattmapping/ObjectAttributeMap.class
