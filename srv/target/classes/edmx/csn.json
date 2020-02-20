@@ -1,0 +1,404 @@
+{
+  "namespace": "sap.structsync.objAttMapping",
+  "definitions": {
+    "ConfigService": {
+      "kind": "service",
+      "@source": "srv/configService.cds"
+    },
+    "ConfigService.ObjAttMap": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": true,
+      "@Capabilities.UpdateRestrictions.Updatable": true,
+      "@cds.persistence.name": "CONFIGSERVICE_OBJATTMAP",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "sap.structsync.objAttMapping.ObjectAttributeMap"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "SourceSystem": {
+          "@cds.persistence.name": "SOURCESYSTEM",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "SourceObject": {
+          "@cds.persistence.name": "SOURCEOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "SourceSubObject": {
+          "@cds.persistence.name": "SOURCESUBOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "TargetSystem": {
+          "@cds.persistence.name": "TARGETSYSTEM",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "TargetObject": {
+          "@cds.persistence.name": "TARGETOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "TargetSubObject": {
+          "@cds.persistence.name": "TARGETSUBOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "SourceAttribute": {
+          "@cds.persistence.name": "SOURCEATTRIBUTE",
+          "type": "cds.String",
+          "length": 100
+        },
+        "TargetAttribute": {
+          "@cds.persistence.name": "TARGETATTRIBUTE",
+          "type": "cds.String",
+          "length": 100
+        }
+      },
+      "$syntax": "projection"
+    },
+    "ConfigService.ObjConfig": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": true,
+      "@Capabilities.UpdateRestrictions.Updatable": true,
+      "@cds.persistence.name": "CONFIGSERVICE_OBJCONFIG",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "sap.structsync.objconfiguration.ObjectConfiguration"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "Object": {
+          "@cds.persistence.name": "OBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "SubObject": {
+          "@cds.persistence.name": "SUBOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "PrimaryIdentifier": {
+          "@cds.persistence.name": "PRIMARYIDENTIFIER",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "SecondaryIdentifier": {
+          "@cds.persistence.name": "SECONDARYIDENTIFIER",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ParentPrimaryKey": {
+          "@cds.persistence.name": "PARENTPRIMARYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ChildPrimarykey": {
+          "@cds.persistence.name": "CHILDPRIMARYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ParentSecondryKey": {
+          "@cds.persistence.name": "PARENTSECONDRYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ChildSecondrykey": {
+          "@cds.persistence.name": "CHILDSECONDRYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ParentTertiaryyKey": {
+          "@cds.persistence.name": "PARENTTERTIARYYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ChildTertiarykey": {
+          "@cds.persistence.name": "CHILDTERTIARYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "Key1": {
+          "@cds.persistence.name": "KEY1",
+          "type": "cds.String",
+          "length": 100
+        },
+        "Key2": {
+          "@cds.persistence.name": "KEY2",
+          "type": "cds.String",
+          "length": 100
+        },
+        "Key3": {
+          "@cds.persistence.name": "KEY3",
+          "type": "cds.String",
+          "length": 100
+        },
+        "Key4": {
+          "@cds.persistence.name": "KEY4",
+          "type": "cds.String",
+          "length": 100
+        },
+        "ConfigurationFileLink": {
+          "@cds.persistence.name": "CONFIGURATIONFILELINK",
+          "type": "cds.LargeString"
+        }
+      },
+      "$syntax": "projection"
+    },
+    "ConfigService.ObjConfigkeyValue": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": true,
+      "@Capabilities.UpdateRestrictions.Updatable": true,
+      "@cds.persistence.name": "CONFIGSERVICE_OBJCONFIGKEYVALUE",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "sap.structsync.objconfiguration1.ObjectConfiguration"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "Object": {
+          "@cds.persistence.name": "OBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "SubObject": {
+          "@cds.persistence.name": "SUBOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "Key1": {
+          "@cds.persistence.name": "KEY1",
+          "type": "cds.String",
+          "length": 100
+        },
+        "Value1": {
+          "@cds.persistence.name": "VALUE1",
+          "type": "cds.String",
+          "length": 100
+        },
+        "ConfigurationFileLink": {
+          "@cds.persistence.name": "CONFIGURATIONFILELINK",
+          "type": "cds.LargeString"
+        }
+      },
+      "$syntax": "projection"
+    },
+    "sap.structsync.objAttMapping.ObjectAttributeMap": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": true,
+      "@Capabilities.UpdateRestrictions.Updatable": true,
+      "@cds.persistence.name": "SAP_STRUCTSYNC_OBJATTMAPPING_OBJECTATTRIBUTEMAP",
+      "elements": {
+        "SourceSystem": {
+          "@cds.persistence.name": "SOURCESYSTEM",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "SourceObject": {
+          "@cds.persistence.name": "SOURCEOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "SourceSubObject": {
+          "@cds.persistence.name": "SOURCESUBOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "TargetSystem": {
+          "@cds.persistence.name": "TARGETSYSTEM",
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "TargetObject": {
+          "@cds.persistence.name": "TARGETOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "TargetSubObject": {
+          "@cds.persistence.name": "TARGETSUBOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "SourceAttribute": {
+          "@cds.persistence.name": "SOURCEATTRIBUTE",
+          "type": "cds.String",
+          "length": 100
+        },
+        "TargetAttribute": {
+          "@cds.persistence.name": "TARGETATTRIBUTE",
+          "type": "cds.String",
+          "length": 100
+        }
+      }
+    },
+    "sap.structsync.objconfiguration.ObjectConfiguration": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": true,
+      "@Capabilities.UpdateRestrictions.Updatable": true,
+      "@cds.persistence.name": "SAP_STRUCTSYNC_OBJCONFIGURATION_OBJECTCONFIGURATION",
+      "elements": {
+        "Object": {
+          "@cds.persistence.name": "OBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "SubObject": {
+          "@cds.persistence.name": "SUBOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "PrimaryIdentifier": {
+          "@cds.persistence.name": "PRIMARYIDENTIFIER",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "SecondaryIdentifier": {
+          "@cds.persistence.name": "SECONDARYIDENTIFIER",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ParentPrimaryKey": {
+          "@cds.persistence.name": "PARENTPRIMARYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ChildPrimarykey": {
+          "@cds.persistence.name": "CHILDPRIMARYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ParentSecondryKey": {
+          "@cds.persistence.name": "PARENTSECONDRYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ChildSecondrykey": {
+          "@cds.persistence.name": "CHILDSECONDRYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ParentTertiaryyKey": {
+          "@cds.persistence.name": "PARENTTERTIARYYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ChildTertiarykey": {
+          "@cds.persistence.name": "CHILDTERTIARYKEY",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "Key1": {
+          "@cds.persistence.name": "KEY1",
+          "type": "cds.String",
+          "length": 100
+        },
+        "Key2": {
+          "@cds.persistence.name": "KEY2",
+          "type": "cds.String",
+          "length": 100
+        },
+        "Key3": {
+          "@cds.persistence.name": "KEY3",
+          "type": "cds.String",
+          "length": 100
+        },
+        "Key4": {
+          "@cds.persistence.name": "KEY4",
+          "type": "cds.String",
+          "length": 100
+        },
+        "ConfigurationFileLink": {
+          "@cds.persistence.name": "CONFIGURATIONFILELINK",
+          "type": "cds.LargeString"
+        }
+      }
+    },
+    "sap.structsync.objconfiguration1.ObjectConfiguration": {
+      "kind": "entity",
+      "@Capabilities.DeleteRestrictions.Deletable": true,
+      "@Capabilities.UpdateRestrictions.Updatable": true,
+      "@cds.persistence.name": "SAP_STRUCTSYNC_OBJCONFIGURATION1_OBJECTCONFIGURATION",
+      "elements": {
+        "Object": {
+          "@cds.persistence.name": "OBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "SubObject": {
+          "@cds.persistence.name": "SUBOBJECT",
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "Key1": {
+          "@cds.persistence.name": "KEY1",
+          "type": "cds.String",
+          "length": 100
+        },
+        "Value1": {
+          "@cds.persistence.name": "VALUE1",
+          "type": "cds.String",
+          "length": 100
+        },
+        "ConfigurationFileLink": {
+          "@cds.persistence.name": "CONFIGURATIONFILELINK",
+          "type": "cds.LargeString"
+        }
+      }
+    }
+  },
+  "meta": {
+    "creator": "CDS Compiler v1.21.1"
+  },
+  "$version": "1.0",
+  "@sql_mapping": "plain"
+}

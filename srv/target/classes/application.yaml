@@ -1,0 +1,10 @@
+---
+spring:
+  profiles: default
+  datasource:
+    url: "jdbc:sqlite:/home/vagrant/config-service/Configs.db"
+    driver-class-name: org.sqlite.JDBC
+    initialization-mode: never
+server:
+  port: 8082
+
