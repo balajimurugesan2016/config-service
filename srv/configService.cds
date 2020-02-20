@@ -4,5 +4,5 @@ using sap.structsync.objconfiguration1 as ObjConfiguration1Sp from '../db/objCon
 service ConfigService{
  entity ObjAttMap as  projection on ObjAttMapSp.ObjectAttributeMap;
   entity ObjConfig as  projection on ObjConfigurationSp.ObjectConfiguration;
-  entity ObjConfigkeyValue as projection on ObjConfiguration1Sp.ObjectConfiguration;
+  entity ObjConfigkeyValue as projection on ObjConfiguration1Sp.ObjectConfigurationkv;
 }

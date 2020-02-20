@@ -180,7 +180,7 @@
         "SELECT": {
           "from": {
             "ref": [
-              "sap.structsync.objconfiguration1.ObjectConfiguration"
+              "sap.structsync.objconfiguration1.ObjectConfigurationkv"
             ]
           }
         }
@@ -361,11 +361,11 @@
         }
       }
     },
-    "sap.structsync.objconfiguration1.ObjectConfiguration": {
+    "sap.structsync.objconfiguration1.ObjectConfigurationkv": {
       "kind": "entity",
       "@Capabilities.DeleteRestrictions.Deletable": true,
       "@Capabilities.UpdateRestrictions.Updatable": true,
-      "@cds.persistence.name": "SAP_STRUCTSYNC_OBJCONFIGURATION1_OBJECTCONFIGURATION",
+      "@cds.persistence.name": "SAP_STRUCTSYNC_OBJCONFIGURATION1_OBJECTCONFIGURATIONKV",
       "elements": {
         "Object": {
           "@cds.persistence.name": "OBJECT",

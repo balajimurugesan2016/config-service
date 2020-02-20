@@ -8,5 +8,5 @@ import java.lang.String;
 public interface Objconfiguration1_ {
   String CDS_NAME = "sap.structsync.objconfiguration1";
 
-  Class<ObjectConfiguration_> OBJECT_CONFIGURATION = ObjectConfiguration_.class;
+  Class<ObjectConfigurationkv_> OBJECT_CONFIGURATIONKV = ObjectConfigurationkv_.class;
 }

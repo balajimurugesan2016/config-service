@@ -2,7 +2,7 @@ namespace sap.structsync.objconfiguration1;
 
 @Capabilities.Updatable:true
 @Capabilities.Deletable:true
-define  entity ObjectConfiguration{
+define  entity ObjectConfigurationkv{
 key Object:String(100);
 key SubObject:String(100);
 Key1:String(100);

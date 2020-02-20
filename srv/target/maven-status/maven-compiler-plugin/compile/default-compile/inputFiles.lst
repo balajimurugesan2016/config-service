@@ -3,15 +3,15 @@
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/configservice/ObjConfigkeyValue.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/sap/structsync/objattmapping/ObjectAttributeMap_.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/configservice/ObjConfig_.java
-/home/vagrant/config-service/srv/src/gen/java/cds/gen/sap/structsync/objconfiguration1/ObjectConfiguration_.java
+/home/vagrant/config-service/srv/src/gen/java/cds/gen/sap/structsync/objconfiguration1/ObjectConfigurationkv.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/sap/structsync/objattmapping/ObjAttMapping_.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/configservice/ObjConfigkeyValue_.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/configservice/ConfigService_.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/sap/structsync/objconfiguration/ObjectConfiguration.java
-/home/vagrant/config-service/srv/src/gen/java/cds/gen/sap/structsync/objconfiguration1/ObjectConfiguration.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/configservice/ObjAttMap_.java
 /home/vagrant/config-service/srv/src/main/java/com/sap/structsync/service/Application.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/sap/structsync/objconfiguration1/Objconfiguration1_.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/sap/structsync/objattmapping/ObjectAttributeMap.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/configservice/ObjAttMap.java
 /home/vagrant/config-service/srv/src/gen/java/cds/gen/sap/structsync/objconfiguration/Objconfiguration_.java
+/home/vagrant/config-service/srv/src/gen/java/cds/gen/sap/structsync/objconfiguration1/ObjectConfigurationkv_.java

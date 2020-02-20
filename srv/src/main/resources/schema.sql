@@ -30,7 +30,7 @@ CREATE TABLE sap_structsync_objconfiguration_ObjectConfiguration (
   PRIMARY KEY(Object, SubObject, PrimaryIdentifier, SecondaryIdentifier, ParentPrimaryKey, ChildPrimarykey, ParentSecondryKey, ChildSecondrykey, ParentTertiaryyKey, ChildTertiarykey)
 );
 
-CREATE TABLE sap_structsync_objconfiguration1_ObjectConfiguration (
+CREATE TABLE sap_structsync_objconfiguration1_ObjectConfigurationkv (
   Object NVARCHAR(100) NOT NULL,
   SubObject NVARCHAR(100) NOT NULL,
   Key1 NVARCHAR(100),
@@ -69,10 +69,10 @@ CREATE VIEW ConfigService_ObjConfig AS SELECT
 FROM sap_structsync_objconfiguration_ObjectConfiguration AS ObjectConfiguration_0;
 
 CREATE VIEW ConfigService_ObjConfigkeyValue AS SELECT
-  ObjectConfiguration_0.Object,
-  ObjectConfiguration_0.SubObject,
-  ObjectConfiguration_0.Key1,
-  ObjectConfiguration_0.Value1,
-  ObjectConfiguration_0.ConfigurationFileLink
-FROM sap_structsync_objconfiguration1_ObjectConfiguration AS ObjectConfiguration_0;
+  ObjectConfigurationkv_0.Object,
+  ObjectConfigurationkv_0.SubObject,
+  ObjectConfigurationkv_0.Key1,
+  ObjectConfigurationkv_0.Value1,
+  ObjectConfigurationkv_0.ConfigurationFileLink
+FROM sap_structsync_objconfiguration1_ObjectConfigurationkv AS ObjectConfigurationkv_0;
 
